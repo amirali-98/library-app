@@ -1,9 +1,12 @@
+import SearchForm from "./components/SearchForm";
 import Layout from "./layout/Layout";
 
 export default function App() {
   return (
     <div className="app">
-      <Layout></Layout>
+      <Layout>
+        <SearchForm />
+      </Layout>
     </div>
   );
 }

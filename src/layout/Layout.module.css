@@ -19,9 +19,6 @@
 }
 
 .content {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
   margin-bottom: 30px;
 }
 
