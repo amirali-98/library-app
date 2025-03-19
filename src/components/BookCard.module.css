@@ -1,0 +1,37 @@
+.bookItem {
+  padding: 10px;
+  background-color: #3b3b3b;
+  border-radius: 10px;
+  display: flex;
+}
+
+.bookItem img {
+  width: 80px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.author {
+  margin-bottom: 50px;
+}
+
+.metaInfo {
+  display: flex;
+  gap: 32px;
+  color: #ccc;
+}
+
+.likeBtn {
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.home {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.home ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 65%;
+}
