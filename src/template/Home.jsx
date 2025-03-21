@@ -3,6 +3,7 @@ import { useState } from "react";
 import { books as allBooks } from "../constants/mockData";
 
 import BookCard from "../components/BookCard";
+import FavoriteList from "../components/FavoriteList";
 
 import styles from "./Home.module.css";
 
@@ -11,7 +12,10 @@ export default function Home() {
   const [likedBooks, setLikedBooks] = useState([]);
   return (
     <div className={styles.home}>
-      <ul>
+      <ul
+        className={styles.bookList}
+        style={{ width: likedBooks.length ? "65%" : "100%" }}
+      >
         {books.map(book => (
           <BookCard
             key={book.id}
@@ -21,11 +25,7 @@ export default function Home() {
           />
         ))}
       </ul>
-      <div>
-        {likedBooks.map(lb => (
-          <p key={lb.id}>{lb.title}</p>
-        ))}
-      </div>
+      <FavoriteList likedBooks={likedBooks} />
     </div>
   );
 }

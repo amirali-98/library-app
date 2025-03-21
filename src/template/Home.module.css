@@ -4,10 +4,11 @@
   justify-content: space-between;
 }
 
-.home ul {
+.bookList {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 65%;
+  transition: width 0.2s;
 }
