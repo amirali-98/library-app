@@ -7,6 +7,7 @@ import Home from "./template/Home";
 import { books as allBooks } from "./constants/mockData";
 
 export default function App() {
+  document.title = "Library App";
   const [books, setBooks] = useState(allBooks);
   return (
     <div className="app">
