@@ -3,13 +3,17 @@ import { MdOutlineSearch } from "react-icons/md";
 
 import styles from "./SearchForm.module.css";
 
-export default function SearchForm() {
+export default function SearchForm({ setBooks, allBooks }) {
   const [search, setSearch] = useState("");
 
   const searchHandler = e => {
     e.preventDefault();
     if (search) {
-      alert(search);
+      setBooks(
+        allBooks.filter(b => b.title.toLowerCase().trim().includes(search))
+      );
+    } else {
+      setBooks(allBooks);
     }
   };
 

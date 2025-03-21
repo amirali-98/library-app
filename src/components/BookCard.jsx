@@ -28,7 +28,11 @@ export default function BookCard({ book, setLikedBooks, likedBooks }) {
         </div>
       </div>
       <button className={styles.likeBtn} onClick={likeBookHandler}>
-        <AiFillHeart style={{ color: isLiked ? "red" : "" }} />
+        <AiFillHeart
+          style={{
+            color: likedBooks.find(lb => lb.id === book.id) ? "red" : "",
+          }}
+        />
       </button>
     </li>
   );
