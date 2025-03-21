@@ -31,3 +31,9 @@
   width: 50px;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .favoriteList {
+    display: none;
+  }
+}

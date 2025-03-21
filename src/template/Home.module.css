@@ -12,3 +12,9 @@
   width: 65%;
   transition: width 0.2s;
 }
+
+@media screen and (max-width: 768px) {
+  .bookList {
+    width: 100% !important;
+  }
+}
